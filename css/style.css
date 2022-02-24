@@ -1,0 +1,70 @@
+Box Model Hack
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html, body {
+     font-size: 62.5%;
+     font-family: 'Zen Kaku Gothic Antique', sans-serif;;
+     background: rgba(255, 255, 255, 1);
+     height: 100%;
+}
+
+h1 {
+     display: flex;
+     justify-content: center;
+     padding-top: 10px;
+     font-size: 2.5rem;
+     font-weight: 700;
+}
+
+h3 {
+     display: flex;
+     justify-content: center;
+     padding-bottom: 30px;
+     font-size: 1.8rem;
+     font-weight: 300;
+}
+
+.parent {
+     text-align: center;
+     font-size: 1.6rem;
+}
+
+.parent > ul {
+     display: inline-flex;
+     list-style-type: japanese-informal;
+     flex-direction: column;
+}
+
+li {
+     margin-bottom: 30px;
+}
+
+a {
+     color: black;
+     text-shadow: 1px 1px 1px rgb(240, 178, 178);
+     text-decoration: none;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
